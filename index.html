@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmetic Dentistry West Palm Beach | Smile Makeovers & Dental Implants Near Me</title>
+  <meta name="description" content="Transform your smile with Cosmetic Dentistry West Palm Beach. Specializing in porcelain veneers, dental bonding, professional teeth whitening, Invisalign, and dental implants near me.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary: #124d54;
+      --primary-hover: #0c363b;
+      --accent: #2e8b96;
+      --accent-light: #e8f4f5;
+      --dark: #1e293b;
+      --light: #f8fafc;
+      --white: #ffffff;
+      --gray-100: #f1f5f9;
+      --gray-200: #e2e8f0;
+      --gray-600: #475569;
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--dark);
+      background-color: var(--light);
+      line-height: 1.6;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background-color: var(--white);
+      box-shadow: var(--shadow-sm);
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 800;
+      font-size: 1.25rem;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--gray-600);
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .cta-btn {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 0.6rem 1.25rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+      transition: background-color 0.2s ease;
+    }
+
+    .cta-btn:hover {
+      background-color: var(--primary-hover);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--accent-light) 0%, var(--white) 100%);
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: 2.75rem;
+      color: var(--primary);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--gray-600);
+      margin-bottom: 2rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-secondary {
+      background-color: var(--white);
+      color: var(--primary);
+      border: 2px solid var(--primary);
+      padding: 0.6rem 1.25rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--accent-light);
+    }
+
+    section {
+      padding: 4rem 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      color: var(--primary);
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .about-text p {
+      margin-bottom: 1.2rem;
+      color: var(--gray-600);
+    }
+
+    .about-text a {
+      color: var(--accent);
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    .about-bullets {
+      list-style: none;
+      margin-top: 1rem;
+    }
+
+    .about-bullets li {
+      position: relative;
+      padding-left: 1.75rem;
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+      color: var(--dark);
+    }
+
+    .about-bullets li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    .about-card {
+      background-color: var(--white);
+      padding: 2.5rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--gray-200);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background-color: var(--white);
+      padding: 1.75rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--gray-200);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .service-card h3 {
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+      font-size: 1.2rem;
+    }
+
+    .service-card p {
+      color: var(--gray-600);
+      font-size: 0.95rem;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .why-card {
+      background-color: var(--accent-light);
+      padding: 1.75rem;
+      border-radius: var(--radius);
+    }
+
+    .why-card h4 {
+      color: var(--primary);
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .why-card p {
+      color: var(--gray-600);
+      font-size: 0.95rem;
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .faq-item {
+      background-color: var(--white);
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--gray-200);
+    }
+
+    .faq-question {
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .faq-answer {
+      color: var(--gray-600);
+      font-size: 0.95rem;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+
+    .contact-info {
+      background-color: var(--white);
+      padding: 2rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--gray-200);
+    }
+
+    .contact-info h3 {
+      color: var(--primary);
+      margin-bottom: 1.25rem;
+    }
+
+    .contact-list {
+      list-style: none;
+    }
+
+    .contact-list li {
+      margin-bottom: 1rem;
+      color: var(--gray-600);
+      font-size: 0.95rem;
+    }
+
+    .contact-list strong {
+      color: var(--dark);
+    }
+
+    .contact-list a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-list a:hover {
+      text-decoration: underline;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 400px;
+      border-radius: var(--radius);
+      border: none;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .direction-box {
+      margin-top: 1.5rem;
+      background-color: var(--gray-100);
+      padding: 1.25rem;
+      border-radius: var(--radius);
+      border-left: 4px solid var(--primary);
+    }
+
+    .direction-box h4 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .direction-box p {
+      color: var(--gray-600);
+      font-size: 0.9rem;
+    }
+
+    .keywords-section {
+      background-color: var(--gray-100);
+      border-radius: var(--radius);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .keywords-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+      list-style: none;
+      margin-top: 1rem;
+    }
+
+    .keywords-list li {
+      background-color: var(--white);
+      padding: 0.4rem 0.9rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary);
+      border: 1px solid var(--gray-200);
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: var(--white);
+      text-align: center;
+      padding: 2rem 1.5rem;
+      margin-top: 4rem;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 768px) {
+      .about-grid, .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      nav {
+        display: none;
+      }
+    }
+  </style>
+
+  <!-- LocalBusiness Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Cosmetic Dentistry West Palm Beach",
+    "image": "https://prosperitydentalgroup.com/services/cosmetic-dentistry/",
+    "@id": "https://prosperitydentalgroup.com/services/cosmetic-dentistry/",
+    "url": "https://prosperitydentalgroup.com/services/cosmetic-dentistry/",
+    "telephone": "561-486-5062",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1535 Prosperity Farms Rd ste 3",
+      "addressLocality": "West Palm Beach",
+      "addressRegion": "FL",
+      "postalCode": "33403",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 26.806320999999997,
+      "longitude": -80.0739108
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Cosmetic Dentistry Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Porcelain Veneers"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Dental Implants Near Me"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Professional Teeth Whitening"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Invisalign Clear Aligners"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        Cosmetic Dentistry <span>West Palm Beach</span>
+      </a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="tel:5614865062" class="cta-btn">Call 561-486-5062</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Transform Your Smile in West Palm Beach</h1>
+        <p>Premium aesthetic treatments including Porcelain Veneers, Smile Makeovers, Professional Teeth Whitening, and expert <a href="#services" style="color: var(--primary); font-weight: 700;">Dental Implants Near Me</a>.</p>
+        <div class="hero-buttons">
+          <a href="#services" class="cta-btn">Explore Services</a>
+          <a href="tel:5614865062" class="btn-secondary">Call For Appointment</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 style="font-size: 2rem; color: var(--primary); font-weight: 800; margin-bottom: 1rem;">Welcome to Cosmetic Dentistry West Palm Beach</h2>
+          <p>At <strong>Cosmetic Dentistry West Palm Beach</strong>, we believe every patient deserves a radiant, healthy, and natural-looking smile. Located conveniently on Prosperity Farms Rd, our dental practice combines state-of-the-art technology with a compassionate, patient-centered approach.</p>
+          <p>Whether you need <a href="https://prosperitydentalgroup.com/services/cosmetic-dentistry/" target="_blank" rel="noopener">Porcelain Veneers</a> to resolve gaps, fast <a href="#services">Chipped Tooth Repair</a>, or are actively searching for reliable <a href="#services"><strong>Dental Implants Near Me</strong></a> to restore missing teeth, our expert team provides tailor-made treatment plans designed for your ultimate comfort and confidence.</p>
+          <ul class="about-bullets">
+            <li>Custom Smile Makeovers tailored to your features</li>
+            <li>Advanced aesthetic techniques and comfortable treatments</li>
+            <li>Convenient location in West Palm Beach, FL</li>
+          </ul>
+        </div>
+        <div class="about-card">
+          <h3 style="color: var(--primary); margin-bottom: 1rem;">Ready for a Brighter Smile?</h3>
+          <p style="color: var(--gray-600); margin-bottom: 1.5rem;">Schedule your initial aesthetic dental evaluation today and discover how our advanced cosmetic treatments can elevate your natural look.</p>
+          <a href="tel:5614865062" class="cta-btn" style="display: inline-block; text-align: center;">Book Consultation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <h2 class="section-title">Our Cosmetic Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Porcelain Veneers</h3>
+          <p>Ultra-thin, custom-crafted porcelain shells engineered to mask discoloration, chips, and misalignment with long-lasting brilliant results.</p>
+        </div>
+        <div class="service-card">
+          <h3>Professional Teeth Whitening</h3>
+          <p>In-office and take-home whitening solutions designed to safely remove deep stubborn stains and brighten your smile several shades.</p>
+        </div>
+        <div class="service-card">
+          <h3>Smile Makeover</h3>
+          <p>A comprehensive combination of cosmetic treatments tailored to overhaul your smile's aesthetic appearance, function, and balance.</p>
+        </div>
+        <div class="service-card">
+          <h3>Dental Bonding</h3>
+          <p>Quick, non-invasive composite resin application ideal for repairing minor tooth cracks, discolored enamel, and slight misalignments.</p>
+        </div>
+        <div class="service-card">
+          <h3>Invisalign Clear Aligners</h3>
+          <p>Discreet, comfortable, and removable clear aligner therapy to straighten your teeth seamlessly without traditional metal braces.</p>
+        </div>
+        <div class="service-card">
+          <h3>Cosmetic Dental Crowns</h3>
+          <p>Tooth-colored ceramic crowns crafted to protect damaged, weakened, or treated teeth while matching your surrounding natural tooth shade.</p>
+        </div>
+        <div class="service-card">
+          <h3>Dental Implants Near Me</h3>
+          <p>Permanent, natural-feeling dental implant restorations that replace missing roots and crowns to completely restore function and aesthetics.</p>
+        </div>
+        <div class="service-card">
+          <h3>Tooth Colored Fillings</h3>
+          <p>Durable, seamless composite fillings that blend seamlessly with your natural tooth color while sealing out decay.</p>
+        </div>
+        <div class="service-card">
+          <h3>Chipped Tooth Repair</h3>
+          <p>Fast, effective restoration techniques to rebuild chipped or worn tooth edges and return natural form and function.</p>
+        </div>
+        <div class="service-card">
+          <h3>Veneers For Gaps In Teeth</h3>
+          <p>Targeted ceramic veneer placement designed to close unwanted spaces and gaps between teeth without lengthy orthodontic care.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section id="why">
+      <h2 class="section-title">Why Choose Cosmetic Dentistry West Palm Beach?</h2>
+      <div class="why-grid">
+        <div class="why-card">
+          <h4>Customized Aesthetic Plans</h4>
+          <p>We craft every treatment specifically around your unique facial structures, ensuring your new smile looks totally natural and beautiful.</p>
+        </div>
+        <div class="why-card">
+          <h4>Advanced Dental Tech</h4>
+          <p>Utilizing high-grade diagnostic imaging and modern materials ensures long-lasting, precise, and virtually pain-free dental care.</p>
+        </div>
+        <div class="why-card">
+          <h4>Comfort & Care First</h4>
+          <p>Our relaxing clinic environment and gentle approach keep patients at total ease throughout every cosmetic procedure.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">What is the difference between Dental Bonding and Porcelain Veneers?</div>
+          <div class="faq-answer">Dental bonding uses a tooth-colored composite resin applied directly to the tooth in a single visit, making it ideal for minor fixes. Porcelain veneers are durable, custom-crafted ceramic shells designed in a lab for a longer-lasting, total smile transformation.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">How long do Porcelain Veneers last?</div>
+          <div class="faq-answer">With proper oral hygiene, regular dental checkups, and basic care, porcelain veneers can last anywhere from 10 to 15 years or longer.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Why should I consider Invisalign Clear Aligners over traditional braces?</div>
+          <div class="faq-answer">Invisalign clear aligners are nearly invisible, removable for easy eating and brushing, and engineered to straighten your teeth comfortably without metal wires or brackets.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Are Dental Implants a good permanent solution for missing teeth?</div>
+          <div class="faq-answer">Yes, dental implants integrate directly with your jawbone, acting as a natural root replacement. They provide permanent support for crowns or bridges and prevent jawbone loss.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Is Professional Teeth Whitening safe for sensitive teeth?</div>
+          <div class="faq-answer">Absolutely. Our professional teeth whitening treatments use clinically tested formulas administered or prescribed by dental professionals to minimize sensitivity while achieving optimal brightness.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section id="contact">
+      <h2 class="section-title">Contact & Location</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <ul class="contact-list">
+            <li><strong>Business Name:</strong> Cosmetic Dentistry West Palm Beach</li>
+            <li><strong>Address:</strong> 1535 Prosperity Farms Rd ste 3, West Palm Beach, FL 33403</li>
+            <li><strong>Phone:</strong> <a href="tel:5614865062">561-486-5062</a></li>
+            <li><strong>Website URL:</strong> <a href="https://prosperitydentalgroup.com/services/cosmetic-dentistry/" target="_blank" rel="noopener">prosperitydentalgroup.com</a></li>
+          </ul>
+
+          <div class="direction-box">
+            <h4>How to Find Us</h4>
+            <p>Located convenient to northern West Palm Beach on Prosperity Farms Rd (Suite 3). Easily accessible via Northlake Blvd or Blue Heron Blvd.</p>
+          </div>
+        </div>
+
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.056768401807!2d-80.0739108!3d26.806320999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8d541e0706f05%3A0xc0d837466f93bbcd!2sCosmetic%20Dentistry%20West%20Palm%20Beach!5e0!3m2!1sen!2s!4v1791456982824!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keywords Section -->
+    <section>
+      <div class="keywords-section">
+        <h3 style="color: var(--primary);">Related Dental Services</h3>
+        <ul class="keywords-list">
+          <li>Cosmetic Dentistry</li>
+          <li>Porcelain Veneers</li>
+          <li>Professional Teeth Whitening</li>
+          <li>Smile Makeover</li>
+          <li>Dental Bonding</li>
+          <li>Invisalign Clear Aligners</li>
+          <li>Cosmetic Dental Crowns</li>
+          <li>Tooth Colored Fillings</li>
+          <li>Chipped Tooth Repair</li>
+          <li>Veneers For Gaps In Teeth</li>
+          <li>Dental Implants Near Me</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Cosmetic Dentistry West Palm Beach — All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
